@@ -35,6 +35,9 @@
 assert_options(ASSERT_ACTIVE, TRUE);
 \Drupal\Component\Assertion\Handle::register();
 
+
+$settings['config_sync_directory'] = '../config/sync';
+
 /**
  * Enable local development services.
  */
