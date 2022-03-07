@@ -1,0 +1,56 @@
+uuid: bd65ee14-928f-4b5d-ae8b-37983fa39d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_us_paragraph
+    - node.type.contact_us
+  module:
+    - entity_reference_revisions
+id: node.contact_us.field_contact_us_paragraph
+field_name: field_contact_us_paragraph
+entity_type: node
+bundle: contact_us
+label: contact_us_paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      best_directors:
+        weight: 11
+        enabled: false
+      best_directors_paragraph:
+        weight: 12
+        enabled: false
+      call_to_action:
+        weight: 13
+        enabled: false
+      home_director_carousel:
+        weight: 14
+        enabled: false
+      home_film_carousel:
+        weight: 15
+        enabled: false
+      home_intro_content:
+        weight: 16
+        enabled: false
+      home_intro_text:
+        weight: 17
+        enabled: false
+      latest_movies:
+        weight: 18
+        enabled: false
+      movies:
+        weight: 19
+        enabled: false
+      webform:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

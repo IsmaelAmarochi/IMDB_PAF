@@ -1,0 +1,10 @@
+uuid: c2b93d58-e3fb-421c-bc18-b2cd2a1d3a7a
+langcode: en
+status: true
+dependencies: {  }
+id: home_film_carousel
+label: 'Home Film Carousel'
+icon_uuid: null
+icon_default: null
+description: 'This carousel will is meant for the Home Page and contains a couple of films.'
+behavior_plugins: {  }

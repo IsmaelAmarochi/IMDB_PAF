@@ -1,0 +1,20 @@
+uuid: 242d71a3-2179-45bc-9786-b63c1b610c4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_cta_title
+field_name: field_cta_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

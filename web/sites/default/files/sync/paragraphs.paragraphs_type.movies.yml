@@ -1,0 +1,10 @@
+uuid: 2b2c44e2-883f-416e-95df-5096b7fd500a
+langcode: en
+status: true
+dependencies: {  }
+id: movies
+label: Movies
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

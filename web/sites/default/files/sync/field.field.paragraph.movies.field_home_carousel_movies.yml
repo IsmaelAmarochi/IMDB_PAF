@@ -1,0 +1,29 @@
+uuid: 18906560-cc6d-4004-9e1a-9e7ef87e03f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_home_carousel_movies
+    - node.type.movie
+    - paragraphs.paragraphs_type.movies
+id: paragraph.movies.field_home_carousel_movies
+field_name: field_home_carousel_movies
+entity_type: paragraph
+bundle: movies
+label: Movies
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movie: movie
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: fcc2c67e-bc41-4d44-90ec-085b4599045d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - imdb
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: imdb_breadcrumbs
+theme: imdb
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

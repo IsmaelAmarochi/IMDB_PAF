@@ -1,0 +1,25 @@
+uuid: ff5d480c-9e6a-4ecb-a870-715dd14e5c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_film_carousel.field_home_film_carousel_title
+    - paragraphs.paragraphs_type.home_film_carousel
+  module:
+    - text
+id: paragraph.home_film_carousel.default
+targetEntityType: paragraph
+bundle: home_film_carousel
+mode: default
+content:
+  field_home_film_carousel_title:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

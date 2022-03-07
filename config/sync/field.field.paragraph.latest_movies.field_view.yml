@@ -1,0 +1,52 @@
+uuid: e1e19d33-515d-4a93-8063-bde6ad0243f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.latest_movies
+  module:
+    - viewsreference
+id: paragraph.latest_movies.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: latest_movies
+label: View
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    movies_4: movies_4
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    directors: 0
+    files: 0
+    frontpage: 0
+    home_carousel_view: 0
+    home_director_view: 0
+    media: 0
+    media_library: 0
+    movies: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

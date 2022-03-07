@@ -1,0 +1,29 @@
+uuid: 51446bb9-e708-46b3-840c-9b555e70900b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_director_tags
+    - node.type.director
+    - taxonomy.vocabulary.best_directors
+id: node.director.field_director_tags
+field_name: field_director_tags
+entity_type: node
+bundle: director
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      best_directors: best_directors
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

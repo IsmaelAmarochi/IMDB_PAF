@@ -1,0 +1,27 @@
+uuid: 8124f702-30f1-424b-a74e-9e5e9f519709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_movies.field_view
+    - paragraphs.paragraphs_type.latest_movies
+  module:
+    - viewsreference
+id: paragraph.latest_movies.default
+targetEntityType: paragraph
+bundle: latest_movies
+mode: default
+content:
+  field_view:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

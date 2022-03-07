@@ -1,0 +1,33 @@
+uuid: bed76d40-a2a1-4291-800f-b2f5415cde74
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: movies
+label: Movies
+type: 'canonical_entities:node'
+pattern: 'movies/[node:title]'
+selection_criteria:
+  76f028a3-4388-45d4-92d1-c75f89a67a05:
+    id: node_type
+    negate: false
+    uuid: 76f028a3-4388-45d4-92d1-c75f89a67a05
+    context_mapping:
+      node: node
+    bundles:
+      movie: movie
+  502626bc-1eb8-45eb-bd3b-67017264bf9f:
+    id: language
+    negate: false
+    uuid: 502626bc-1eb8-45eb-bd3b-67017264bf9f
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

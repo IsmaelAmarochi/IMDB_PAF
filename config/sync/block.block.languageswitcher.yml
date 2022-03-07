@@ -1,0 +1,20 @@
+uuid: b5ba8f50-76f7-4d79-adde-4e85b17df49b
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bootstrap
+id: languageswitcher
+theme: bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: visible
+  provider: language
+visibility: {  }

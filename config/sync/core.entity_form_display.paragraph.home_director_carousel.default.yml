@@ -1,0 +1,39 @@
+uuid: f8227b6c-d81e-4c5b-8c82-e5dd15027ae6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_director_carousel.field_home_dir_carousel_title
+    - field.field.paragraph.home_director_carousel.field_paragraphs
+    - paragraphs.paragraphs_type.home_director_carousel
+  module:
+    - paragraphs
+    - text
+id: paragraph.home_director_carousel.default
+targetEntityType: paragraph
+bundle: home_director_carousel
+mode: default
+content:
+  field_home_dir_carousel_title:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

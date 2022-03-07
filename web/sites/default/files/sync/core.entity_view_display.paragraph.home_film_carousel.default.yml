@@ -1,0 +1,22 @@
+uuid: c36b3717-f3cf-4e5c-abf6-4006b290ca92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_film_carousel.field_home_film_carousel_title
+    - paragraphs.paragraphs_type.home_film_carousel
+  module:
+    - text
+id: paragraph.home_film_carousel.default
+targetEntityType: paragraph
+bundle: home_film_carousel
+mode: default
+content:
+  field_home_film_carousel_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

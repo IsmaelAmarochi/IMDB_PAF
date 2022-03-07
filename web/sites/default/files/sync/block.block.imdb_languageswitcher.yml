@@ -1,0 +1,20 @@
+uuid: b3322236-6686-4646-a216-53cd976660c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - imdb
+id: imdb_languageswitcher
+theme: imdb
+region: footer
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: visible
+  provider: language
+visibility: {  }

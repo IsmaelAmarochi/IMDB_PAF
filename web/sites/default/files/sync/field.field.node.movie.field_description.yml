@@ -1,0 +1,21 @@
+uuid: d24edc2c-88ab-4f0f-a633-ce8ea3c06a66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.movie
+  module:
+    - text
+id: node.movie.field_description
+field_name: field_description
+entity_type: node
+bundle: movie
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: b814c837-31bd-4232-892c-999449181449
+langcode: en
+status: true
+dependencies: {  }
+id: home_intro_content
+label: 'Home Intro Content'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph is meant to be used on the Home Page. '
+behavior_plugins: {  }

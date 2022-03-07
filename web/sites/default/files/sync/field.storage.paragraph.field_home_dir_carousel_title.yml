@@ -1,0 +1,20 @@
+uuid: 9e832a99-7061-46cc-8698-d5ae7b16790e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_home_dir_carousel_title
+field_name: field_home_dir_carousel_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

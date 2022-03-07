@@ -1,0 +1,21 @@
+uuid: 53e18dc9-cd1b-465b-8521-4f7082102150
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movies.field_home_carousel_movies
+    - paragraphs.paragraphs_type.movies
+id: paragraph.movies.default
+targetEntityType: paragraph
+bundle: movies
+mode: default
+content:
+  field_home_carousel_movies:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

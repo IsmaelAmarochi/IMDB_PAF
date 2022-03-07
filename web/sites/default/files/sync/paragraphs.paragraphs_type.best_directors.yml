@@ -1,0 +1,10 @@
+uuid: 8ca8b599-6df6-4144-a875-9d5847bf1ed1
+langcode: en
+status: true
+dependencies: {  }
+id: best_directors
+label: 'Best Directors'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

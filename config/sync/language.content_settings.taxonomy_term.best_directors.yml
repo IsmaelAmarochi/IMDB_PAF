@@ -1,0 +1,11 @@
+uuid: a883598d-e048-4702-a697-8b041e950326
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.best_directors
+id: taxonomy_term.best_directors
+target_entity_type_id: taxonomy_term
+target_bundle: best_directors
+default_langcode: site_default
+language_alterable: false

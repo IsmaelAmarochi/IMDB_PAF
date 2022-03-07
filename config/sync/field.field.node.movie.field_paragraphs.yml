@@ -1,0 +1,61 @@
+uuid: 4b8ae9b3-4664-43b3-90f2-09e03b3f4d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.movie
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.movie.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: movie
+label: paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      webform: webform
+    negate: 0
+    target_bundles_drag_drop:
+      best_directors:
+        weight: 12
+        enabled: false
+      best_directors_paragraph:
+        weight: 13
+        enabled: false
+      call_to_action:
+        weight: 14
+        enabled: false
+      form:
+        weight: 15
+        enabled: false
+      home_director_carousel:
+        weight: 16
+        enabled: false
+      home_film_carousel:
+        weight: 17
+        enabled: false
+      home_intro_content:
+        weight: 18
+        enabled: false
+      home_intro_text:
+        weight: 19
+        enabled: false
+      latest_movies:
+        weight: 20
+        enabled: false
+      movies:
+        weight: 21
+        enabled: false
+      webform:
+        weight: 22
+        enabled: true
+field_type: entity_reference_revisions

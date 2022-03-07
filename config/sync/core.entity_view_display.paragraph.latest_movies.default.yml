@@ -1,0 +1,24 @@
+uuid: 6c81705b-7a03-4687-8383-c05285e57ab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.latest_movies.field_view
+    - paragraphs.paragraphs_type.latest_movies
+  module:
+    - viewsreference
+id: paragraph.latest_movies.default
+targetEntityType: paragraph
+bundle: latest_movies
+mode: default
+content:
+  field_view:
+    type: viewsreference_formatter
+    label: visually_hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

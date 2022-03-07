@@ -1,0 +1,17 @@
+uuid: 3d7a538f-d1c7-4ce3-94a5-338e27f01eaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Contact us'
+type: contact_us
+description: 'The contact us page'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

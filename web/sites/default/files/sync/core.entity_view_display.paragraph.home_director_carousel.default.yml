@@ -1,0 +1,33 @@
+uuid: 072e3f4f-c1cb-47da-a8a7-5de0ab01500c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_director_carousel.field_home_dir_carousel_title
+    - field.field.paragraph.home_director_carousel.field_paragraphs
+    - paragraphs.paragraphs_type.home_director_carousel
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.home_director_carousel.default
+targetEntityType: paragraph
+bundle: home_director_carousel
+mode: default
+content:
+  field_home_dir_carousel_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

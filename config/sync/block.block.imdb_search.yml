@@ -1,0 +1,23 @@
+uuid: ba95ba14-3762-4ffa-849f-70654686eee7
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - imdb
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: imdb_search
+theme: imdb
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

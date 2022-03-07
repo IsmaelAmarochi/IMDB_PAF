@@ -1,0 +1,63 @@
+uuid: 8851e80c-dd61-49a7-a919-b2c635984d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.director.field_bio
+    - field.field.node.director.field_date_of_birth
+    - field.field.node.director.field_director_tags
+    - field.field.node.director.field_name
+    - field.field.node.director.field_photo
+    - node.type.director
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.director.teaser
+targetEntityType: node
+bundle: director
+mode: teaser
+content:
+  field_bio:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 130
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_date_of_birth:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_name:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  field_director_tags: true
+  langcode: true

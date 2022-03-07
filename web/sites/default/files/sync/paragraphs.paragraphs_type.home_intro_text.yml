@@ -1,0 +1,10 @@
+uuid: 026d1db7-3da8-4fda-9769-311257d5c6a1
+langcode: en
+status: true
+dependencies: {  }
+id: home_intro_text
+label: 'Home Intro Text'
+icon_uuid: null
+icon_default: null
+description: 'Text underneath the intro content (Image).'
+behavior_plugins: {  }

@@ -1,0 +1,20 @@
+uuid: bb6c99a7-cd53-4f08-b093-6db1cf3e1bd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_contact_us_title
+field_name: field_contact_us_title
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

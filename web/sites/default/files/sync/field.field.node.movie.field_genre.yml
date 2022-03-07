@@ -1,0 +1,21 @@
+uuid: cb5e1b4c-ce35-42f9-9760-e1f570868342
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genre
+    - node.type.movie
+  module:
+    - text
+id: node.movie.field_genre
+field_name: field_genre
+entity_type: node
+bundle: movie
+label: Genre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

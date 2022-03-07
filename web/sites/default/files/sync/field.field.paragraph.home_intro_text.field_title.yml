@@ -1,0 +1,21 @@
+uuid: d9e2ef01-8036-4b35-aeab-53d388a0473c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.home_intro_text
+  module:
+    - text
+id: paragraph.home_intro_text.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: home_intro_text
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

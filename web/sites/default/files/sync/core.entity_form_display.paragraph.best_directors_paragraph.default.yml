@@ -1,0 +1,27 @@
+uuid: b02ce5e1-29dc-42a4-8351-2a9954fb4b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.best_directors_paragraph.field_view_paragraph
+    - paragraphs.paragraphs_type.best_directors_paragraph
+  module:
+    - viewsreference
+id: paragraph.best_directors_paragraph.default
+targetEntityType: paragraph
+bundle: best_directors_paragraph
+mode: default
+content:
+  field_view_paragraph:
+    type: viewsreference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

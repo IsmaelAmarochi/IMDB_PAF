@@ -1,0 +1,78 @@
+uuid: bcad6f8b-390e-40f2-8cb2-c9b0df39f8ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_description
+    - field.field.node.movie.field_director
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_movie_image
+    - field.field.node.movie.field_movie_tags
+    - field.field.node.movie.field_paragraphs
+    - field.field.node.movie.field_title
+    - node.type.movie
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_director:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_genre:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_movie_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_movie_tags: true
+  langcode: true

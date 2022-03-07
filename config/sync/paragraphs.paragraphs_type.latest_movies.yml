@@ -1,0 +1,10 @@
+uuid: 5da03080-b5ff-4328-b0c6-c070fe9dcafa
+langcode: en
+status: true
+dependencies: {  }
+id: latest_movies
+label: Latest-Movies
+icon_uuid: null
+icon_default: null
+description: 'Displays the latest movies (4)'
+behavior_plugins: {  }

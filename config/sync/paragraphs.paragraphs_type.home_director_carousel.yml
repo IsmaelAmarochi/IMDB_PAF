@@ -1,0 +1,10 @@
+uuid: 6099c4ce-1ce4-45cc-b281-aa9a4536feea
+langcode: en
+status: true
+dependencies: {  }
+id: home_director_carousel
+label: 'Home Director Carousel'
+icon_uuid: null
+icon_default: null
+description: 'This paragraph is meant for displaying 6 directors on the Home Page.'
+behavior_plugins: {  }

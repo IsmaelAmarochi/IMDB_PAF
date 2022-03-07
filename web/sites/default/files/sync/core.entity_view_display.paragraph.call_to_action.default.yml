@@ -1,0 +1,41 @@
+uuid: 3fa6298b-f64b-4ff9-bdc3-cb76f60de122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_action.field_cta_desc
+    - field.field.paragraph.call_to_action.field_cta_image
+    - field.field.paragraph.call_to_action.field_cta_title
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - image
+    - text
+id: paragraph.call_to_action.default
+targetEntityType: paragraph
+bundle: call_to_action
+mode: default
+content:
+  field_cta_desc:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cta_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cta_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

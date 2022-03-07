@@ -1,0 +1,25 @@
+uuid: 1be04a40-c8a5-4b65-a855-8f14db468c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.movies.field_home_carousel_movies
+    - paragraphs.paragraphs_type.movies
+id: paragraph.movies.default
+targetEntityType: paragraph
+bundle: movies
+mode: default
+content:
+  field_home_carousel_movies:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

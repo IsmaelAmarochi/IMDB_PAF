@@ -1,0 +1,21 @@
+uuid: 3143fc42-aaf9-48d2-bac0-a35ba3960dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.director
+  module:
+    - text
+id: node.director.field_name
+field_name: field_name
+entity_type: node
+bundle: director
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

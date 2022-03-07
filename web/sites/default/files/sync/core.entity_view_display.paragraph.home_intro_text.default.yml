@@ -1,0 +1,30 @@
+uuid: ca26b5b9-4e83-413f-85d4-a15a65b57a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_intro_text.field_description
+    - field.field.paragraph.home_intro_text.field_title
+    - paragraphs.paragraphs_type.home_intro_text
+  module:
+    - text
+id: paragraph.home_intro_text.default
+targetEntityType: paragraph
+bundle: home_intro_text
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

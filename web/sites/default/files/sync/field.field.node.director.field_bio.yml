@@ -1,0 +1,21 @@
+uuid: 9670b900-81ab-43a6-ab2f-b37d6a9933a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio
+    - node.type.director
+  module:
+    - text
+id: node.director.field_bio
+field_name: field_bio
+entity_type: node
+bundle: director
+label: Bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
