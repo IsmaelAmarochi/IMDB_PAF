@@ -1,0 +1,9 @@
+{% if content %}
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+{% endif %}
+{# 
+<script>
+    console.log({{ _context | json_encode | raw }});
+ </script> #}

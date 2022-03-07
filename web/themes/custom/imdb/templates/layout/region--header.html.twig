@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+	<div{{attributes}}>
+
+		<nav class="main" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
+			<a href="/">
+				<h1 class="text-logo"> {{ elements.imdb_branding.content.site_name }} </h1>
+			</a>
+			<div class="nav-links" id="navLinks">
+				{# <ul>
+					<li><a href="">IPSUM</a></li>
+					<li><a href="">PRIMIS</a></li>
+					<li><a href="">AMET</a></li>
+					<li><a href="">LIGULA</a></li>
+				</ul> #}
+        {{ elements.imdb_main_menu }}
+			</div>
+		</nav>
+
+		{# <div class="admin-tabs">
+			{{ elements.imdb_local_tasks }}
+		</div> #}
+	</div>
+
+{% endif %}
+
+{# <script>
+	console.log({{ _context | json_encode | raw }});
+</script> #}

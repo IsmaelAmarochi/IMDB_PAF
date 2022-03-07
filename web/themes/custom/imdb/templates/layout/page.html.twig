@@ -1,0 +1,55 @@
+{# <div
+	class="layout-container">
+
+
+	<header class="header" role="banner">
+		{{ page.header }}
+	</header>
+
+	<main role="main">
+		<a id="main-content" tabindex="-1"></a>
+
+
+		<div class="layout-content">
+			{{ page.content }}
+		</div>{
+
+	</main>
+
+	{% if page.footer %}
+		<footer role="contentinfo">
+			{{ page.footer }}
+		</footer>
+	{% endif %}
+
+</div> #}
+
+
+
+<div class="layout-container ">
+
+  <section class="header">
+      {{ page.header }}
+  </Section1
+
+    <main role="main">
+        <a id="main-content" tabindex="-1"></a>
+
+        <div class="layout-content">
+            {{ page.content }}
+        </div>
+
+    </main>
+
+	<div class="footer-basic" id="footer" role="contentinfo">
+	    
+        {{ page.footer }}
+    </footer>
+	
+
+</div>
+
+
+{# <script>
+	console.log({{ _context | json_encode | raw }});
+</script> #}

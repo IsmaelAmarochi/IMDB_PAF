@@ -1,0 +1,25 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes, 'container') }}>
+    {% block content %}
+
+        <div class="text-box" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1200">
+            <h1>{{ elements.field_home_content_title }}</h1>
+            <p>{{ elements.field_home_content_description }}</p>
+            <div class="hero-btn">{{ elements.field_home_content_button }}</div>
+            
+        </div>
+        
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <form{{ attributes }}>
+
+  {{ children }}
+  {{ children.form.subject }}
+
+</form> #}
+
+
+
+		<div class="col-xs-12">
+			<div class="styled-input wide">
+            {{ element.elements.name }}
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="styled-input wide">
+{{ element.elements.email }}
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="styled-input wide">
+            {{ element.elements.subject }}
+			</div>
+		</div>
+
+		<div class="col-xs-12">
+			<div class="styled-input wide">
+            {{ element.elements.message }}
+                        {{ element.form_build_id }}
+            {{ element.form_token }}
+            {{ element.form_id }}
+            {{ element.actions }}
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="btn-lrg submit-btn">Send Message</div>
+		</div>
+
+

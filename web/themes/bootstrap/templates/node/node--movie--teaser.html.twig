@@ -1,0 +1,129 @@
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes, 'container') }}>
+
+  {# {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }} #}
+
+  <div{{ content_attributes.addClass('content ') }}>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">{{ content.field_genre }}</strong>
+                <h3 class="mb-2">
+                    <a class="text-dark" href=" {{ url }}">{{ content.field_title }}</a>
+                </h3>
+                <div class="mb-1 text-muted">{{ content.field_director }}</div>
+                <p class="card-text">{{ content.field_description }}</p>
+
+                </div>
+
+            <div class="p-4">
+                <img class="size-image card-img-right flex-auto d-none d-md-block" 
+                alt="Movie image [200x250]" 
+                src="{{ file_url(content.field_movie_image['#items'][0].entity.uri.value) }}"
+                data-holder-rendered="true" />
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</article>
+
+<style>
+/*! CSS Used from: https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+.size-image { width: 180px; height: 250px; }
+.size { padding-right: 0px; padding-left: 0px;}
+h3{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+strong{font-weight:bolder;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+img{vertical-align:middle;border-style:none;}
+h3{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h3{font-size:1.75rem;}
+.col-md-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:768px){
+.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+.card{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem;}
+.card-body{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;padding:1.25rem;}
+.d-none{display:none!important;}
+.d-inline-block{display:inline-block!important;}
+.d-flex{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;}
+@media (min-width:768px){
+.d-md-block{display:block!important;}
+}
+.flex-column{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;}
+.align-items-start{-webkit-box-align:start!important;-ms-flex-align:start!important;align-items:flex-start!important;}
+@media (min-width:768px){
+.flex-md-row{-webkit-box-orient:horizontal!important;-webkit-box-direction:normal!important;-ms-flex-direction:row!important;flex-direction:row!important;}
+}
+.mb-0{margin-bottom:0!important;}
+.mb-1{margin-bottom:.25rem!important;}
+.mb-2{margin-bottom:.5rem!important;}
+.mb-4{margin-bottom:1.5rem!important;}
+.mb-auto{margin-bottom:auto!important;}
+.text-primary{color:#007bff!important;}
+.text-dark{color:#343a40!important;}
+a.text-dark:focus,a.text-dark:hover{color:#1d2124!important;}
+.text-muted{color:#6c757d!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3,p{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+/*! CSS Used from: https://getbootstrap.com/docs/4.0/examples/blog/blog.css */
+h3{font-family:"Playfair Display", Georgia, "Times New Roman", serif;}
+.card-img-right{height:100%;border-radius:0 3px 3px 0;}
+.flex-auto{-ms-flex:0 0 auto;-webkit-box-flex:0;flex:0 0 auto;}
+@media (min-width: 768px){
+.h-md-250{height:250px;}
+}
+.box-shadow{box-shadow:0 .25rem .75rem rgba(0, 0, 0, .05);}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/playfairdisplay/v28/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+</style>
+
+
+
+            {% set responsiveimagestyle = {
+                '#theme': 'responsive_image',
+                '#responsive_image_style_id': 'responsive_image_style',
+                '#uri': file_url(content.field_movie_image['#items'].entity.uri.value) ,
+                '#attributes': { class: 'width: 200px; height: 250px;', alt: 'movie image', title: 'text' },
+            } %}
+
+            {# <div class="card-img-right flex-auto d-none d-md-block">
+                {{ responsiveimagestyle }}
+            </div> #}
+
+
+            {# <div class="card-img-right flex-auto d-none d-md-block">
+                <div class="size-image"> {{ content.field_movie_image }}  </div>
+            </div> #}

@@ -1,0 +1,25 @@
+<article{{attributes}}>
+	<div{{content_attributes.addClass('wrap')}}>
+		<div class="container-teaser">
+			<div class="post">
+				<div class="header_post">
+					<img class="director-image" src="{{ file_url(node.field_photo.entity.fileuri) }}" alt="">
+				</div>
+				<div class="body_post director-body">
+					<div class="post_content">
+						<h1>
+							<a href=" {{ url }}" class="url">{{ content.field_name}}</a>
+						</h1>
+						<p>{{ content.field_bio }}</p>
+						<div class="container_infos">
+							<div class="postedBy">
+								<span>date of birth</span>
+								{{ content.field_date_of_birth }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

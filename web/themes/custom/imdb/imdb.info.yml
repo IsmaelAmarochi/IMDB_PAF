@@ -1,0 +1,19 @@
+name: imdb
+type: theme
+description: This is a custom theme for the IMDB website
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: stable
+package: Custom
+
+regions:
+  header: Header
+  main_nav: Main navigation
+  content: Main content
+  footer: Footer
+
+libraries:
+  - imdb/global-styling
+
+# ckeditor_stylesheets:
+#   - css/ckeditor.css

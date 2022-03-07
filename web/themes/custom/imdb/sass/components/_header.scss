@@ -1,0 +1,201 @@
+.header {
+    // min-height: 100vh;
+    width: 100%;
+    // background: rgb(84, 101, 255);
+
+    // background: linear-gradient(90deg, rgba(84, 101, 255, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .main {
+        display: flex;
+        padding: 1% 4%;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-logo {
+            font-size: 25px;
+            text-decoration: none;
+            color: $c-black;
+            display: inline-block;
+            transition: 0.5s;
+        }
+
+        .menu {
+            display: none;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $c-white;
+                font-size: 15px;
+            }
+        }
+
+        .menu-close {
+            display: none;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $Blue--Dark;
+                font-size: 15px;
+                padding: 12px;
+            }
+        }
+    }
+
+    .text-logo::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: $Blue--Dark;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .text-logo:hover {
+        color: $Blue--Dark;
+        cursor: pointer;
+    }
+
+    :hover::after {
+        width: 100%;
+    }
+
+    .fancy::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: $Blue--Dark;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .fancy:hover {
+        color: $Blue--Dark;
+        cursor: pointer;
+    }
+
+    :hover::after {
+        width: 100%;
+    }
+
+    .nav-links {
+        flex: 1;
+        text-align: right;
+
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position: relative;
+
+                ::after {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background: $Blue--Dark;
+                    display: block;
+                    margin: auto;
+                    transition: 0.5s;
+                }
+
+                :hover::after {
+                    width: 100%;
+                }
+
+                a:hover {
+                    color: $Blue--Dark;
+                }
+
+                a {
+                    color: $c-black;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.hero-btn div a {
+    text-decoration: none;
+    display: inline-block;
+    color: $c-black;
+    border: 1px solid $c-black;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hero-btn div a:hover {
+    border: 1px solid $Blue--Dark;
+    background: $Blue--Dark;
+    transition: 0.7s;
+    text-decoration: none;
+    color: $c-white;
+}
+
+.relative {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    height: 50vh;
+}
+
+.container-80 {
+    width: 80%;
+    margin: auto;
+
+}
+
+.container-80-mb {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.5%;
+}
+
+
+.text-box {
+    width: 80%;
+    color: $c-black;
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 0;
+    position: relative;
+   
+
+
+    h1 {
+        font-size: 62px;
+    }
+
+    p {
+        margin: 10px 0 40px;
+        font-size: 20px;
+        color: $c-black;
+    }
+}
+
+.image div img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+}

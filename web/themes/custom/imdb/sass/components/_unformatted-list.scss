@@ -1,0 +1,19 @@
+.row {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    -webkit-box-flex: 0;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}

@@ -1,0 +1,27 @@
+
+.cta {
+    margin: 100px auto;
+    margin-top: 10px;
+    width: 60%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+    h1 {
+        color: $c-white;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+}
+
+// @media(max-width: 700px) {
+//     .cta {   
+//         h1{
+//             font-size: 18px;
+//             padding: 10px;
+//         }
+//     }
+// }

@@ -1,0 +1,33 @@
+<article{{attributes}}>
+	<div{{content_attributes.addClass('wrap')}}>
+		<div class="container-teaser">
+			<div class="post">
+				<div class="header_post">
+					<img class="movie-image" src="{{ file_url(node.field_movie_image.entity.fileuri) }}" alt="">
+				</div>
+				<div class="body_post movie-body">
+					<div class="post_content">
+						<h1>
+							<a href=" {{ url }}" class="url">{{ content.field_title }}</a>
+						</h1>
+						<p>{{ content.field_description }}</p>
+						<div class="container_infos">
+							<div class="postedBy">
+								<span>director</span>
+								{{ content.field_director }}
+							</div>
+							<div class="container_tags">
+								<span>genre</span>
+								<div class="tags">
+									<ul>
+										<li>{{ content.field_genre }}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

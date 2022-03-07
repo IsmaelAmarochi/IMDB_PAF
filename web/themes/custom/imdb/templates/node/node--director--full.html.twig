@@ -1,0 +1,18 @@
+<article{{attributes.addClass('article')}}>
+	<div{{content_attributes}} class="full-body">
+		<div class="body-left">
+			<div class="title">
+				<h1>{{ content.field_name }}</h1>
+			</div>
+			<div class="desc">{{ content.field_bio }}</div>
+			<div class="dir">
+				<p>{{ content.field_name }}
+					is born{{ content.field_date_of_birth }}
+				</p>
+			</div>
+		</div>
+		<div class="body-right">
+			<img class="movie-image" src="{{ file_url(node.field_photo.entity.fileuri) }}" alt="">
+		</div>
+	</div>
+</article>

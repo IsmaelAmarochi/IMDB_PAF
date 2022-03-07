@@ -1,0 +1,17 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+	<div{{attributes.addClass(classes,'container')}}>
+		{% block content %}
+			<section class="cta" style="background-image:url('{{ file_url(node.field_cta_image.entity.fileuri) }}');">
+				<h1>{{ content.field_cta_desc }}</h1>
+				<a class="hero-btn">{{ content.field_cta_title }}</a>
+			</section>
+		{% endblock %}
+	</div>
+{% endblock paragraph %}
