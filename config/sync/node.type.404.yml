@@ -1,0 +1,17 @@
+uuid: 2b18fd98-2b60-494c-a8df-ad8499cc16e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: '404'
+type: '404'
+description: 'This is the error 404 page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

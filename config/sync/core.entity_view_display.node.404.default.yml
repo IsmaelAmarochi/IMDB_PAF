@@ -1,0 +1,43 @@
+uuid: e9b3b2be-4231-46ad-9861-6f293d98fc36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.404.field_error_404_btn
+    - field.field.node.404.field_title
+    - node.type.404
+  module:
+    - link
+    - text
+    - user
+id: node.404.default
+targetEntityType: node
+bundle: '404'
+mode: default
+content:
+  field_error_404_btn:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

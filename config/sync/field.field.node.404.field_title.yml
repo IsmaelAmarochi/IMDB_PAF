@@ -1,0 +1,24 @@
+uuid: beb3fa2d-c6f3-416a-ad84-49ca94f7a7e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.404
+  module:
+    - text
+id: node.404.field_title
+field_name: field_title
+entity_type: node
+bundle: '404'
+label: Title
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 'Oops! Something went wrong!'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

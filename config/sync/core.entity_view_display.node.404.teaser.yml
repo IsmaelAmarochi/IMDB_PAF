@@ -1,0 +1,25 @@
+uuid: 56e7e970-9c00-451e-9cf7-b015201ab9cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.404.field_error_404_btn
+    - field.field.node.404.field_title
+    - node.type.404
+  module:
+    - user
+id: node.404.teaser
+targetEntityType: node
+bundle: '404'
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_error_404_btn: true
+  field_title: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 042337b2-7d11-4aaa-bb10-902265f04823
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.404
+id: node.404
+target_entity_type_id: node
+target_bundle: '404'
+default_langcode: site_default
+language_alterable: false
