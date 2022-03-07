@@ -1,0 +1,41 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer>
+      {{ author_picture }}
+      <div{{ author_attributes }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes }} data-aos="fade-up"
+                               data-aos-easing="linear"
+                               data-aos-duration="1000">
+
+    <div class="face">
+      <div class="band">
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+      </div>
+      <div class="eyes"></div>
+      <div class="dimples"></div>
+      <div class="mouth"></div>
+    </div>
+
+    <h1 class="h1-404"> {{ content.field_title }} </h1>
+    <div class="hero-btn btn-404"> {{ content.field_error_404_btn }} </div>
+
+  </div>
+
+</article>
