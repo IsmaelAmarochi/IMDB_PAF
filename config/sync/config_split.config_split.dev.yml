@@ -1,0 +1,17 @@
+uuid: e0f36b55-3004-45a9-89d3-39191038a7a5
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: 'development config files'
+weight: 0
+folder: /config/dev
+module: {  }
+theme: {  }
+blacklist:
+  - system.site
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
