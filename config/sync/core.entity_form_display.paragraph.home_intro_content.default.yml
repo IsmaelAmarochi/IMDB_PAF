@@ -6,11 +6,8 @@ dependencies:
     - field.field.paragraph.home_intro_content.field_home_content_button
     - field.field.paragraph.home_intro_content.field_home_content_description
     - field.field.paragraph.home_intro_content.field_home_content_title
-    - field.field.paragraph.home_intro_content.field_intro_image
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.home_intro_content
   module:
-    - image
     - link
     - text
 id: paragraph.home_intro_content.default
@@ -41,14 +38,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_intro_image:
-    type: image_image
-    weight: 0
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
 hidden:
   created: true

@@ -1,0 +1,54 @@
+[33mcommit cfee07ca9072a66652788d717899be0fb101c842[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Wed Mar 9 10:27:48 2022 +0100
+
+    //
+
+[33mcommit 97e5c163f1af33292ca816e03ec87030ee6af70d[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 14:32:35 2022 +0100
+
+    commit
+
+[33mcommit 3cd860b54b9900213f79e076eb69825f209f5baa[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 13:27:57 2022 +0100
+
+    ///
+
+[33mcommit 1d0b44bfafac3a99fe12c6ace06d4cb8f0b98c11[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 12:20:28 2022 +0100
+
+    //
+
+[33mcommit e00552d6cc77c63f90d7bb4129ae3dcaec3a96d4[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 12:16:50 2022 +0100
+
+    /
+
+[33mcommit 989f42ea4beae5ac0209cd6824bf9972147eb2e7[m
+Merge: da78577b c2c825c6
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 12:12:24 2022 +0100
+
+    Merge branch 'master' of https://bitbucket.org/ismaelpaf/imdb/src/main
+
+[33mcommit da78577b5ecb06290a21afac0c68c6d93cf33196[m
+Author: IsmaelPAF <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 12:11:54 2022 +0100
+
+    404, config
+
+[33mcommit c2c825c6e032c9ff8b396571395387d2891f2c3d[m
+Author: Ismael <ismael.amarochi@plantaflag.com>
+Date:   Mon Mar 7 10:33:35 2022 +0000
+
+    .gitignore created online with Bitbucket
+
+[33mcommit 5fdcbe4ccd4d40b22a036f9fa9163325a5238928[m
+Author: IsmaelAmarochi <61270555+IsmaelAmarochi@users.noreply.github.com>
+Date:   Mon Mar 7 11:23:05 2022 +0100
+
+    initial commit
